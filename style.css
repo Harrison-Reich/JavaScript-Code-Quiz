@@ -1,9 +1,10 @@
-.container {
-    display: flex;
-    justify-content: center;
+body {
+    background-color: pink;
 }
 
 #titleBox {
     margin-top: 30%;
     width: 50%;
+    background-color: greenyellow;
+    padding: 1em;
 }
