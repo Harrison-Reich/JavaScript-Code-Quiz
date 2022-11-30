@@ -1,9 +1,9 @@
 #title-box {
-    margin: 25% 0 0;
+    margin: 30% 0 0;
     border: black solid 3px;
     padding: 2em;
 }
 
 #title-box button {
-    width: 50%;
+    width: 30%;
 }
