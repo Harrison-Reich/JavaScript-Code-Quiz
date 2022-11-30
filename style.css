@@ -1,11 +1,7 @@
-body {
-    background-color: #444;
-}
-
 #titleBox {
-    margin-top: 30%;
-    background-color: white;
-    padding: 1em;
+    margin: 30% 0 0 ;
+    border: black solid 3px;
+    padding: 2em;
 }
 
 #startBtn {
