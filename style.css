@@ -4,7 +4,10 @@ body {
 
 #titleBox {
     margin-top: 30%;
-    width: 50%;
     background-color: greenyellow;
     padding: 1em;
+}
+
+#startBtn {
+    width: 40%;
 }
