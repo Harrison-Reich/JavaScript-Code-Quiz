@@ -1,10 +1,10 @@
 body {
-    background-color: pink;
+    background-color: #444;
 }
 
 #titleBox {
     margin-top: 30%;
-    background-color: greenyellow;
+    background-color: white;
     padding: 1em;
 }
 
