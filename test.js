@@ -1,5 +1,5 @@
-let btn = document.getElementById('startBtn')
-
-btn.addEventListener('click', () => {
-    console.log('Start Button Works!')
-})
+function startButton() {
+    let titleBox = document.getElementById('title-box');
+    titleBox.classList.add('hide')
+    console.log (titleBox)
+}
