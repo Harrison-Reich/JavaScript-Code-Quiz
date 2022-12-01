@@ -37,7 +37,7 @@ const startQuiz = () => {
     questionTitleElement.innerHTML = currentQuestion.question
     
     const answerChoicesElement = document.getElementById('answer-choices');
-    answerChoicesElement.choices.forEach(choice => {
+    currentQuestion.choices.forEach(choice => {
         answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     });
 }
@@ -52,14 +52,14 @@ const startQuiz = () => {
 
 // start new game function
 // populating div with questions and choices based on index of questions array
-// function setNextQuestion() {
-//     let currentQuestion = questions[currentIndex];
-//     // setting question
-//     const questionTitleElement = document.getElementById('question-title');
-//     questionTitleElement.textContent = currentQuestion.question;
-//     // setting choices as buttons
-//     const questionChoicesElement = document.getElementById('question-choices');
-//     currentQuestion.choices.forEach(choice => {
-//         questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
-//     });
-// }
+function setNextQuestion() {
+    let currentQuestion = questions[currentIndex];
+    // setting question
+    const questionTitleElement = document.getElementById('question-title');
+    questionTitleElement.textContent = currentQuestion.question;
+    // setting choices as buttons
+    const questionChoicesElement = document.getElementById('question-choices');
+    currentQuestion.choices.forEach(choice => {
+        questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
+    });
+}
