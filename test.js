@@ -1,6 +1,6 @@
 // defining variables
 const currentIndex = 0;
-const startButton = document.getElementById('startButton');
+const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 
 // array of questions
