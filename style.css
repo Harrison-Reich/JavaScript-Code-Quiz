@@ -17,6 +17,10 @@ main {
     margin: 0 5rem 5rem;
 }
 
+.next-button {
+margin-top: 1rem;
+}
+
 .btnWidth {
     width: 30%;
 }
