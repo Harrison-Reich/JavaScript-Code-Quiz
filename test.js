@@ -1,6 +1,7 @@
 // defining variables
 const currentIndex = 0;
 const startButton = document.getElementById('startButton');
+const nextButton = document.getElementById('next-button');
 
 // array of questions
 const questions = [
@@ -42,4 +43,11 @@ const startQuiz = () => {
     currentQuestion.choices.forEach(choice => {
         answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     });
+    setNextQuestion();
+}
+
+const setNextQuestion = () => {
+    nextButton.addEventListener('click', () => {
+        console.log('working next question button')
+    })
 }
