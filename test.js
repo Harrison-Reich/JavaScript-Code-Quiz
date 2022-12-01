@@ -8,13 +8,13 @@ const questions = [
         // question 1
         question: "Which team had the most recent Super Bowl? ",
         choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
+        answer: 2
     },
     {
         // question 2
         question: "What is the best ice cream flavor?",
         choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-        answer: 2
+        answer: 3
     },
     {
         // question 3
@@ -42,4 +42,5 @@ const startQuiz = () => {
     currentQuestion.choices.forEach(choice => {
         answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     });
+    console.log(currentQuestion)
 }
