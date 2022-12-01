@@ -21,7 +21,7 @@ main {
     width: 30%;
 }
 
-.question-choices {
+.answer-choices {
     display: flex;
     align-items: center;
     flex-direction: column;
