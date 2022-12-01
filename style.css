@@ -1,5 +1,7 @@
-.title-box {
+main {
     margin-top: 22rem;
+}
+.title-box {
     border: black solid 3px;
     padding: 2rem;
 }
