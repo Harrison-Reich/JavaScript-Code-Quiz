@@ -1,10 +1,10 @@
-#title-box {
+.title-box {
     margin: 30% 0 0;
     border: black solid 3px;
     padding: 2rem;
 }
 
-#title-box button {
+.title-box button {
     width: 30%;
 }
 
