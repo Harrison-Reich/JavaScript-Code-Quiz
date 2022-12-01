@@ -1,3 +1,8 @@
+// defining variables
+const questionTextElement = document.getElementById('question-text');
+const questionChoicesElement = document.getElementById('question-choices');
+const currentQuestion = 0;
+
 // array of questions
 const questions = [
     {
@@ -52,17 +57,19 @@ const questions = [
     }
 ]
 
-let currentQuestion = 0;
-
 
 // start quiz button function
 function startButton() {
     document.getElementById('title-box').style.visibility = 'hidden';
     document.getElementById('questions-container').style.visibility = 'visible';
+    setQuestions()
     console.log ('Begin quiz')
 }
 
 // set questions function
 function setQuestions() {
-
+    const currentQuestion = questions[currentQuestion];
+    const questionTextElement = document.getElementById('question-text');
+    questionTextElement.textContent = currentQuestion.question
+    const questionChoicesElement = document.getElementById('question-choices') 
 }

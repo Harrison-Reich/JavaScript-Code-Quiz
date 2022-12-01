@@ -14,14 +14,16 @@
     <main class="container justify-content-center">
         
         <div id="title-box" class="row d-flex text-center justify-content-center" style="visibility: visible;">
-            <h1 id="title" class="row d-flex text-center justify-content-center">Harrison's Code Quiz!</h1>
-            <h5>Click the button below to begin the quiz!</h5>
+            <h1 id="title" class="row d-flex text-center justify-content-center">The Genius Test</h1>
+            <h6>Click the button below to begin</h6>
             <button onclick="startButton()" type="button" class="btn btn-primary">Start</button>
         </div>
 
-        <div id="questions-container" style="visibility: hidden;"></div>
+        <div id="questions-container" class="row d-flex text-center justify-content-center" style="visibility: hidden;">
+            <h2 id="question-text">question</h2>
+            <div id="question-choices">choices</div>
+        </div>
 
-        <div id="scores-container" style="visibility: hidden;"></div>
 
     </main>
     <!-- JavaScript Bundle with Popper -->
