@@ -24,12 +24,14 @@ const questions = [
     },
 ]
 
+// when clicked, the start button will hide the code quiz window and show the question container while executing the startQuiz function
 startButton.addEventListener('click', () => {
     document.getElementById('title-box').classList.add('d-none');
     document.getElementById('questions-container').classList.remove('d-none');
     startQuiz();
 })
 
+// when called, startQuiz will get the current question index and populate the question title and answers according to the question index
 const startQuiz = () => {
     let currentQuestion = questions[currentIndex];
 
@@ -39,27 +41,5 @@ const startQuiz = () => {
     const answerChoicesElement = document.getElementById('answer-choices');
     currentQuestion.choices.forEach(choice => {
         answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
-    });
-}
-
-// start quiz button function
-// hiding start page and showing questions
-// function startButton() {
-//     document.getElementById('title-box').classList.add('d-none');
-//     document.getElementById('questions-container').classList.remove('d-none');
-//     setNextQuestion();
-// }
-
-// start new game function
-// populating div with questions and choices based on index of questions array
-function setNextQuestion() {
-    let currentQuestion = questions[currentIndex];
-    // setting question
-    const questionTitleElement = document.getElementById('question-title');
-    questionTitleElement.textContent = currentQuestion.question;
-    // setting choices as buttons
-    const questionChoicesElement = document.getElementById('question-choices');
-    currentQuestion.choices.forEach(choice => {
-        questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     });
 }
