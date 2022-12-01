@@ -4,18 +4,18 @@ const currentIndex = 0;
 // array of questions
 const questions = [
     {
-        question: "This is questions 1",
+        question: "Which team had the most recent Super Bowl? ",
         choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
         answer: 3
     },
     {
         question: "This is question 2",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
+        choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+        answer: 2
     },
     {
         question: "This is question 3",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
+        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
         answer: 3
     },
 ]
