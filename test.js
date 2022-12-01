@@ -1,5 +1,6 @@
 // defining variables
 const currentIndex = 0;
+const startButton = document.getElementById('startButton');
 
 // array of questions
 const questions = [
@@ -23,6 +24,15 @@ const questions = [
     },
 ]
 
+startButton.addEventListener('click', () => {
+    document.getElementById('title-box').classList.add('d-none');
+    document.getElementById('questions-container').classList.remove('d-none');
+    startQuiz();
+})
+
+const startQuiz = () => {
+    console.log('Game Start')
+}
 
 // start quiz button function
 // hiding start page and showing questions
