@@ -11,58 +11,21 @@ const questions = [
         answer: 3
     },
     {
-        question: "What is my favorite NFL team?",
+        question: "This is question 2",
         choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
         answer: 3
     },
     {
-        question: "What is my favorite NFL team?",
+        question: "This is question 3",
         choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
         answer: 3
     },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    },
-    {
-        question: "What is my favorite NFL team?",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
-        answer: 3
-    }
 ]
-
 
 // start quiz button function
 function startButton() {
     document.getElementById('title-box').style.visibility = 'hidden';
     document.getElementById('questions-container').style.visibility = 'visible';
-    setQuestions()
     console.log ('Begin quiz')
 }
 
@@ -73,3 +36,5 @@ function setQuestions() {
     questionTextElement.textContent = currentQuestion.question
     const questionChoicesElement = document.getElementById('question-choices') 
 }
+
+setQuestions();
