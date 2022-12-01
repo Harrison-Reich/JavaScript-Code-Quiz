@@ -52,15 +52,17 @@ const questions = [
     }
 ]
 
+let currentQuestion = 0;
 
 
-// start button function
+// start quiz button function
 function startButton() {
     document.getElementById('title-box').style.visibility = 'hidden';
+    document.getElementById('questions-container').style.visibility = 'visible';
     console.log ('Begin quiz')
 }
 
 // set questions function
 function setQuestions() {
-    
+
 }
