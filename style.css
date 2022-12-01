@@ -3,7 +3,8 @@ main {
 }
 .title-box {
     border: black solid 3px;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 0 10rem 10rem;
 }
 
 .title-box button {
