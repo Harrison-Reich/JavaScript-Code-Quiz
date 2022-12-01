@@ -1,12 +1,10 @@
 // defining variables
-const questionTitleElement = document.getElementById('question-text');
-const questionChoicesElement = document.getElementById('question-choices');
 const currentIndex = 0;
 
 // array of questions
 const questions = [
     {
-        question: "What is my favorite NFL team?",
+        question: "This is questions 1",
         choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
         answer: 3
     },
@@ -24,8 +22,8 @@ const questions = [
 
 // start quiz button function
 function startButton() {
-    document.getElementById('title-box').style.visibility = 'hidden';
-    document.getElementById('questions-container').style.visibility = 'visible';
+    document.getElementById('title-box').style.display = 'none';
+    document.getElementById('questions-container').style.display = 'show';
     setQuestions();
 }
 
@@ -33,17 +31,11 @@ function startButton() {
 function setQuestions() {
     let currentQuestion = questions[currentIndex];
 
-    let questionTitleElement = document.getElementById('question-title');
+    const questionTitleElement = document.getElementById('question-title');
     questionTitleElement.textContent = currentQuestion.question;
 
-    let questionChoicesElement = document.getElementById('question-choices');
-    currentQuestion.choices.forEach((choices, i) => {
-        let choiceItems = document.createElement('button');
-        choiceItems.setAttribute('class', 'chocies');
-        choiceItems.setAttribute('value', 'choices');
-
-        choiceItems.textContent = i + 1 + '. ' + choices;
-        choices.onclick = questionClick;
-        questionChoicesElement.appendChild('choiceItems')
+    const questionChoicesElement = document.getElementById('question-choices');
+    currentQuestion.choices.forEach(choice => {
+        questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     })
 }

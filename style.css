@@ -1,9 +1,20 @@
 #title-box {
     margin: 30% 0 0;
     border: black solid 3px;
-    padding: 2em;
+    padding: 2rem;
 }
 
 #title-box button {
     width: 30%;
+}
+
+.btnWidth {
+    width: 30%;
+}
+
+.question-choices {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
