@@ -19,7 +19,7 @@ const questions = [
         // question 3
         question: "What is brown and sticky?",
         choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
-        answer: 3
+        answer: 1
     },
 ]
 
