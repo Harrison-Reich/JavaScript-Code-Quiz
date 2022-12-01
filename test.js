@@ -48,6 +48,6 @@ const startQuiz = () => {
 
 const setNextQuestion = () => {
     nextButton.addEventListener('click', () => {
-        
+        console.log('next button working')
     })
 }
