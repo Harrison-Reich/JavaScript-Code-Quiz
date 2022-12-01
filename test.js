@@ -26,15 +26,13 @@ const questions = [
 function startButton() {
     document.getElementById('title-box').style.visibility = 'hidden';
     document.getElementById('questions-container').style.visibility = 'visible';
-    console.log ('Begin quiz')
+    setQuestions();
 }
 
 // set questions function
 function setQuestions() {
     const currentQuestion = questions[currentQuestion];
     const questionTextElement = document.getElementById('question-text');
-    questionTextElement.textContent = currentQuestion.question
-    const questionChoicesElement = document.getElementById('question-choices') 
+    questionTextElement.textContent = currentQuestion.question;
+    questionChoicesElement = document.getElementById('question-choices'); 
 }
-
-setQuestions();
