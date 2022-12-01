@@ -28,12 +28,12 @@ const questions = [
 function startButton() {
     document.getElementById('title-box').classList.add('d-none');
     document.getElementById('questions-container').classList.remove('d-none');
-    startQuiz();
+    setNextQuestion();
 }
 
 // start new game function
 // populating div with questions and choices based on index of questions array
-function startQuiz() {
+function setNextQuestion() {
     let currentQuestion = questions[currentIndex];
     // setting question
     const questionTitleElement = document.getElementById('question-title');
