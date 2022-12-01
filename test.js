@@ -23,6 +23,22 @@ const questions = [
     },
 ]
 
+const onChoiceSelected = (event) => {
+    if(event.target.dataset.index != questions[currentIndex].answer) {
+        setFeedback('wrong');
+    } else {
+        setFeedback('correct');
+
+        currentIndex += 1;
+        if(currentIndex >= questions.length) {
+            endQuiz();
+            return;
+        }
+    }
+    setQuestions();
+}
+
+
 // start quiz button function
 // hiding start page and showing questions
 function startButton() {
