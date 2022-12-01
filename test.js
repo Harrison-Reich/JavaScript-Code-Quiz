@@ -1,7 +1,7 @@
 // defining variables
-const questionTextElement = document.getElementById('question-text');
+const questionTitleElement = document.getElementById('question-text');
 const questionChoicesElement = document.getElementById('question-choices');
-const currentQuestion = 0;
+const currentIndex = 0;
 
 // array of questions
 const questions = [
@@ -31,8 +31,19 @@ function startButton() {
 
 // set questions function
 function setQuestions() {
-    const currentQuestion = questions[currentQuestion];
-    const questionTextElement = document.getElementById('question-text');
-    questionTextElement.textContent = currentQuestion.question;
-    questionChoicesElement = document.getElementById('question-choices'); 
+    let currentQuestion = questions[currentIndex];
+
+    let questionTitleElement = document.getElementById('question-title');
+    questionTitleElement.textContent = currentQuestion.question;
+
+    let questionChoicesElement = document.getElementById('question-choices');
+    currentQuestion.choices.forEach((choices, i) => {
+        let choiceItems = document.createElement('button');
+        choiceItems.setAttribute('class', 'chocies');
+        choiceItems.setAttribute('value', 'choices');
+
+        choiceItems.textContent = i + 1 + '. ' + choices;
+        choices.onclick = questionClick;
+        questionChoicesElement.appendChild('choiceItems')
+    })
 }
