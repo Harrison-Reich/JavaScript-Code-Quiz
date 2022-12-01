@@ -31,7 +31,15 @@ startButton.addEventListener('click', () => {
 })
 
 const startQuiz = () => {
-    console.log('Game Start')
+    let currentQuestion = questions[currentIndex];
+
+    const questionTitleElement = document.getElementById('question-title');
+    questionTitleElement.innerHTML = currentQuestion.question
+    
+    const answerChoicesElement = document.getElementById('answer-choices');
+    answerChoicesElement.choices.forEach(choice => {
+        answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
+    });
 }
 
 // start quiz button function
