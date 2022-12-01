@@ -23,25 +23,25 @@ const questions = [
     },
 ]
 
+
 // start quiz button function
 // hiding start page and showing questions
-function startButton() {
-    document.getElementById('title-box').classList.add('d-none');
-    document.getElementById('questions-container').classList.remove('d-none');
-    setNextQuestion();
-}
+// function startButton() {
+//     document.getElementById('title-box').classList.add('d-none');
+//     document.getElementById('questions-container').classList.remove('d-none');
+//     setNextQuestion();
+// }
 
 // start new game function
 // populating div with questions and choices based on index of questions array
-function setNextQuestion() {
-    let currentQuestion = questions[currentIndex];
-    // setting question
-    const questionTitleElement = document.getElementById('question-title');
-    questionTitleElement.textContent = currentQuestion.question;
-    // setting choices as buttons
-    const questionChoicesElement = document.getElementById('question-choices');
-    currentQuestion.choices.forEach(choice => {
-        questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
-        questionChoicesElement.addEventListener('click', onChoiceSelected);
-    });
-}
+// function setNextQuestion() {
+//     let currentQuestion = questions[currentIndex];
+//     // setting question
+//     const questionTitleElement = document.getElementById('question-title');
+//     questionTitleElement.textContent = currentQuestion.question;
+//     // setting choices as buttons
+//     const questionChoicesElement = document.getElementById('question-choices');
+//     currentQuestion.choices.forEach(choice => {
+//         questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
+//     });
+// }
