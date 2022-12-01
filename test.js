@@ -22,8 +22,8 @@ const questions = [
 
 // start quiz button function
 function startButton() {
-    document.getElementById('title-box').style.display = 'none';
-    document.getElementById('questions-container').style.display = 'show';
+    document.getElementById('title-box').classList.add('d-none');
+    document.getElementById('questions-container').classList.add = ('d-block');
     setQuestions();
 }
 
