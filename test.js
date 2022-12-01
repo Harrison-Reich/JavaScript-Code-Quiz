@@ -39,7 +39,5 @@ function setQuestions() {
     const questionChoicesElement = document.getElementById('question-choices');
     currentQuestion.choices.forEach(choice => {
         questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
-        questionChoicesElement.addEventListener('click', onChoiceSelected);
     });
 }
-
