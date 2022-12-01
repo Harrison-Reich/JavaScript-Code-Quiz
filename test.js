@@ -42,5 +42,4 @@ const startQuiz = () => {
     currentQuestion.choices.forEach(choice => {
         answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     });
-    console.log(currentQuestion)
 }
