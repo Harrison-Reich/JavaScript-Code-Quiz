@@ -11,13 +11,13 @@ const questions = [
     },
     {
         // question 2
-        question: "This is question 2",
+        question: "What is the best ice cream flavor?",
         choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
         answer: 2
     },
     {
         // question 3
-        question: "This is question 3",
+        question: "What is brown and sticky?",
         choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
         answer: 3
     },
