@@ -1,7 +1,9 @@
-// defining variables
+// defining variables by ID
 const currentIndex = 0;
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
+const questionTitleElement = document.getElementById('question-title');
+const answerChoicesElement = document.getElementById('answer-choices');
 
 // array of questions
 const questions = [
@@ -36,10 +38,8 @@ startButton.addEventListener('click', () => {
 const startQuiz = () => {
     let currentQuestion = questions[currentIndex];
 
-    const questionTitleElement = document.getElementById('question-title');
     questionTitleElement.innerHTML = currentQuestion.question
     
-    const answerChoicesElement = document.getElementById('answer-choices');
     currentQuestion.choices.forEach(choice => {
         answerChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
     });
@@ -48,6 +48,6 @@ const startQuiz = () => {
 
 const setNextQuestion = () => {
     nextButton.addEventListener('click', () => {
-        console.log('next button working')
+        
     })
 }
