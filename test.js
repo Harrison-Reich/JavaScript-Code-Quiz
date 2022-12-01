@@ -29,7 +29,7 @@ function startButton() {
 }
 
 // set questions function
-// populating questions and choices based on index of questions array
+// populating div with questions and choices based on index of questions array
 function setQuestions() {
     let currentQuestion = questions[currentIndex];
     // setting question
