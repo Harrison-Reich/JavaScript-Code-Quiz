@@ -24,7 +24,7 @@ const questions = [
 // hiding start page and showing questions
 function startButton() {
     document.getElementById('title-box').classList.add('d-none');
-    document.getElementById('questions-container').classList.add = ('d-block');
+    document.getElementById('questions-container').classList.remove('d-none');
     setQuestions();
 }
 
