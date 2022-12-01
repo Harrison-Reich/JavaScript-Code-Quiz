@@ -23,33 +23,17 @@ const questions = [
     },
 ]
 
-const onChoiceSelected = (event) => {
-    if(event.target.dataset.index != questions[currentIndex].answer) {
-        setFeedback('wrong');
-    } else {
-        setFeedback('correct');
-
-        currentIndex += 1;
-        if(currentIndex >= questions.length) {
-            endQuiz();
-            return;
-        }
-    }
-    setQuestions();
-}
-
-
 // start quiz button function
 // hiding start page and showing questions
 function startButton() {
     document.getElementById('title-box').classList.add('d-none');
     document.getElementById('questions-container').classList.remove('d-none');
-    setQuestions();
+    newGame();
 }
 
-// set questions function
+// start new game function
 // populating div with questions and choices based on index of questions array
-function setQuestions() {
+function newGame() {
     let currentQuestion = questions[currentIndex];
     // setting question
     const questionTitleElement = document.getElementById('question-title');
@@ -58,5 +42,6 @@ function setQuestions() {
     const questionChoicesElement = document.getElementById('question-choices');
     currentQuestion.choices.forEach(choice => {
         questionChoicesElement.innerHTML += `<button class="btn btn-primary btnWidth">${choice}</button>`
+        questionChoicesElement.addEventListener('click', onChoiceSelected);
     });
 }
