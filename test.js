@@ -26,6 +26,7 @@ const questions = [
     },
 ]
 
+// answer questions array
 const answers = [
     3,0,2
 ]
