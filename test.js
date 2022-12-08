@@ -49,9 +49,6 @@ const showQuestion = () => {
         currentQuestion.choices.forEach((choice, userchoice) => {
             answerChoicesElement.innerHTML += `<button onclick="userpick(${userchoice})" class="btn btn-primary btnWidth">${choice}</button>`
         });
-        nextButton.addEventListener('click', () => {
-            setNextQuestion();
-        })
     }
 }
 
@@ -69,4 +66,11 @@ const setNextQuestion = () => {
 
 const endQuiz = () => {
     document.getElementById('questions-container').classList.add('d-none');
+    let correctanswers = 0
+    for (let i = 0; i < questions.length; i++) {
+        if (correctanswers [i] === userpicks [i]) {
+            correctanswers++
+        }
+    }
+    console.log(correctanswers)
 }
