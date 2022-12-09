@@ -87,7 +87,6 @@ const showQuestion = () => {
 // onclick function that tracks the users answer choice, increments the current question index and calls setNextQestion and showQuestion functions
 const userpick = (answerpicked) => {
     userpicks.push(answerpicked)
-    console.group(answerpicked)
     currentIndex++
     setNextQuestion();
     showQuestion();
