@@ -36,28 +36,28 @@ const questions = [
     },
     {
         // question 6
-        question: "What is brown and sticky?",
-        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+        question: "Which event occurs when the user clicks on an HTML element?",
+        choices: ["onmouseclick", "onchange", "onmouse", "onclick"],
     },
     {
         // question 7
-        question: "What is brown and sticky?",
-        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+        question: "The first index of an array is",
+        choices: ["Any", "1", "0", "100"],
     },
     {
         // question 8
-        question: "What is brown and sticky?",
-        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+        question: "What does DOM stand for?",
+        choices: ["Date of Maker", "Document Object Model", "Document Object Maker", "Document Oversee Model"],
     },
     {
         // question 9
-        question: "What is brown and sticky?",
-        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+        question: "String values are enclosed within",
+        choices: ["curly brackets", "parentheses", "square brackets", "quotation marks"],
     },
     {
         // question 10
-        question: "What is brown and sticky?",
-        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+        question: "Who is the best team in the AFC WEST?",
+        choices: ["The Denver Broncos", "The Las Vegas Raiders", "The Los Angeles Chargers", "The Kansas City Chiefs"],
     },
 ]
 
