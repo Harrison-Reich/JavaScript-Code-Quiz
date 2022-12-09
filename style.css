@@ -8,19 +8,15 @@ main {
 .title-box {
     padding: 1rem;
 }
-
 .title-box button {
     width: 30%;
 }
-
 .questions-container {
     padding: 1rem;
 }
-
 .btnWidth {
     width: 30%;
 }
-
 .answer-choices {
     display: flex;
     align-items: center;
