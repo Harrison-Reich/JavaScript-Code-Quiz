@@ -4,4 +4,4 @@
 
   ## Description
   This is a JavaScript code quiz that has a start page, a 10 question quiz based on JavaScript and a final score page.
-link to live site: https://harrison-reich.github.io/project3/
+link to live quiz: https://harrison-reich.github.io/project3/
