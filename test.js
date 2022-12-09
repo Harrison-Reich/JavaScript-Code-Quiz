@@ -67,6 +67,7 @@ const setNextQuestion = () => {
 
 const endQuiz = () => {
     document.getElementById('questions-container').classList.add('d-none');
+    document.getElementById('scores-container').classList.remove('d-none');
     let correctanswers = 0
     for (let i = 0; i < questions.length; i++) {
         if (correctanswers [i] === userpicks [i]) {
