@@ -1,10 +1,10 @@
 // defining variables by ID
 let currentIndex = 0;
+let userpicks = []
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionTitleElement = document.getElementById('question-title');
 const answerChoicesElement = document.getElementById('answer-choices');
-var userpicks = []
 
 
 // array of questions
