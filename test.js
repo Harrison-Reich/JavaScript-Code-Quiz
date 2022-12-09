@@ -71,19 +71,20 @@ startButton.addEventListener('click', () => {
 })
 // when called, startQuiz will get the current question index and populate the question title and answers according to the question index
 const showQuestion = () => {
+    // ending quiz if no more questions
     if (currentIndex === questions.length) {
         endQuiz();
     } else {
+        // injecting HTML into index with each question and chocies
         let currentQuestion = questions[currentIndex];
-    
         questionTitleElement.innerHTML = currentQuestion.question
-        
+        // foreach array method looping over answer choices and creating buttons
         currentQuestion.choices.forEach((choice, userchoice) => {
             answerChoicesElement.innerHTML += `<button onclick="userpick(${userchoice})" class="btn btn-primary btnWidth">${choice}</button>`
         });
     }
 }
-
+// onclick function that tracks the users answer choice, increments the current question index and calls setNextQestion and showQuestion functions
 const userpick = (answerpicked) => {
     userpicks.push(answerpicked)
     console.group(answerpicked)
@@ -91,15 +92,16 @@ const userpick = (answerpicked) => {
     setNextQuestion();
     showQuestion();
 }
-
+// clearing html data
 const setNextQuestion = () => {
     questionTitleElement.innerHTML = ""
     answerChoicesElement.innerHTML = ""
 }
-
+// hides questions container, shows high scores container
 const endQuiz = () => {
     document.getElementById('questions-container').classList.add('d-none');
     document.getElementById('scores-container').classList.remove('d-none');
+    // comparing correct answers array to user answer choices array and incrementing correct answers count
     let correctanswers = 0
     for (let i = 0; i < questions.length; i++) {
         if (answers [i] === userpicks [i]) {
