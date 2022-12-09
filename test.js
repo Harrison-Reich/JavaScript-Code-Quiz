@@ -109,6 +109,7 @@ const endQuiz = () => {
         }
     }
     // updating user score
+    userScore.innerHTML = correctanswers
     let userScore = document.getElementById('user-score')
     if (correctanswers === 10) {
         userScore.style.color = "green";
@@ -117,5 +118,4 @@ const endQuiz = () => {
     } else {
         userScore.style.color = "red";
     }
-    userScore.innerHTML = correctanswers
 }
