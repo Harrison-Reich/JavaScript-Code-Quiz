@@ -11,16 +11,51 @@ var userpicks = []
 const questions = [
     {
         // question 1
-        question: "Which team had the most recent Super Bowl? ",
-        choices: ["The Packers", "The Saints", "The Broncos", "The Patriots"],
+        question: "Inside which HTML element do we put the JavaScript? ",
+        choices: ["script", "js", "scripting", "javascript"],
     },
     {
         // question 2
-        question: "What is the best ice cream flavor?",
-        choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+        question: "JavaScript is a strictly typed language",
+        choices: ["True", "False"],
     },
     {
         // question 3
+        question: "Which of the following is not a primitive data type?",
+        choices: ["number", "string", "null", "object"],
+    },
+    {
+        // question 4
+        question: "An Array is what kind of datastructure?",
+        choices: ["link-list", "tree", "list"],
+    },
+    {
+        // question 5
+        question: "JavaScript was invented by Netscape, who is now known as",
+        choices: ["Microsoft", "Mozilla", "Google", "Apple"],
+    },
+    {
+        // question 6
+        question: "What is brown and sticky?",
+        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+    },
+    {
+        // question 7
+        question: "What is brown and sticky?",
+        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+    },
+    {
+        // question 8
+        question: "What is brown and sticky?",
+        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+    },
+    {
+        // question 9
+        question: "What is brown and sticky?",
+        choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
+    },
+    {
+        // question 10
         question: "What is brown and sticky?",
         choices: ["Pick this one", "Or this one", "Not this one", "Maybe this one"],
     },
@@ -28,7 +63,7 @@ const questions = [
 
 // answer questions array
 const answers = [
-    3,0,2
+    1,1,3,2,3,
 ]
 
 // when clicked, the start button will hide the code quiz window and show the question container while executing the startQuiz function
