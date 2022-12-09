@@ -111,8 +111,9 @@ const endQuiz = () => {
     let userScore = document.getElementById('user-score')
     if (correctanswers === 10) {
         userScore.style.color = "green";
-    } else if (correctanswers > 6) {
+    } else if (correctanswers > 5) {
         userScore.style.color = "yellow";
+        
     } else {
         userScore.style.color = "red";
     }
