@@ -6,7 +6,6 @@ main {
     background-color: white;
 }
 .title-box {
-    border: black solid 5px;
     padding: 1rem;
 }
 
@@ -15,7 +14,6 @@ main {
 }
 
 .questions-container {
-    border: black solid 5px;
     padding: 1rem;
 }
 
