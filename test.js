@@ -6,7 +6,7 @@ const answerChoicesElement = document.getElementById('answer-choices');
 const questions = [
     {
         // question 1
-        question: "Inside which HTML element do we put the JavaScript? ",
+        question: "Inside which HTML element do we put the JavaScript?",
         choices: ["script", "js", "scripting", "javascript"],
     },
     {
@@ -57,7 +57,7 @@ const questions = [
 ]
 // correct answers array
 const answers = [
-    0,0,2,1,2,3,2,1,3,0
+    0,1,3,1,2,3,2,1,3,0
 ]
 // current question index
 let currentIndex = 0;
@@ -111,6 +111,8 @@ const endQuiz = () => {
     let userScore = document.getElementById('user-score')
     if (correctanswers === 10) {
         userScore.style.color = "green";
+    } else if (correctanswers > 6) {
+        userScore.style.color = "yellow";
     } else {
         userScore.style.color = "red";
     }
