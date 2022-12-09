@@ -63,7 +63,7 @@ const questions = [
 
 // answer questions array
 const answers = [
-    1,1,3,2,3,1,1,1,1,1
+    0,0,2,1,2,3,2,1,3,0
 ]
 
 // when clicked, the start button will hide the code quiz window and show the question container while executing the startQuiz function
