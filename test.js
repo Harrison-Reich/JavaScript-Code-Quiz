@@ -108,5 +108,6 @@ const endQuiz = () => {
             correctanswers++
         }
     }
-    console.log(correctanswers)
+    let userScore = document.getElementById('user-score')
+    userScore.innerHTML = correctanswers
 }
