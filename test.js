@@ -4,7 +4,7 @@ const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionTitleElement = document.getElementById('question-title');
 const answerChoicesElement = document.getElementById('answer-choices');
-var userpicks = []
+let userpicks = []
 
 
 // array of questions
@@ -63,7 +63,7 @@ const questions = [
 
 // answer questions array
 const answers = [
-    1,1,3,2,3,
+    1,1,3,2,3,1,1,1,1,1
 ]
 
 // when clicked, the start button will hide the code quiz window and show the question container while executing the startQuiz function
@@ -90,6 +90,7 @@ const showQuestion = () => {
 
 const userpick = (answerpicked) => {
     userpicks.push(answerpicked)
+    console.group(answerpicked)
     currentIndex++
     setNextQuestion();
     showQuestion();
@@ -105,7 +106,7 @@ const endQuiz = () => {
     document.getElementById('scores-container').classList.remove('d-none');
     let correctanswers = 0
     for (let i = 0; i < questions.length; i++) {
-        if (correctanswers [i] === userpicks [i]) {
+        if (answers [i] === userpicks [i]) {
             correctanswers++
         }
     }
