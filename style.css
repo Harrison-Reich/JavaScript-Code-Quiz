@@ -3,8 +3,6 @@ body {
 }
 main {
     background-color: white;
-    align-items: center;
-    height: 100vh;
 }
 .title-box {
     padding: 1rem;
