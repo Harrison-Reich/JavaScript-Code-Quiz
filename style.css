@@ -3,6 +3,7 @@ body {
 }
 main {
     background-color: white;
+    width: 100vw;
 }
 .title-box {
     padding: 1rem;
