@@ -2,8 +2,9 @@ body {
     background-color: #333;
 }
 main {
-    margin-top: 20rem;
     background-color: white;
+    align-items: center;
+    height: 100vh;
 }
 .title-box {
     padding: 1rem;
